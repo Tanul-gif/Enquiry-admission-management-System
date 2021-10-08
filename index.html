@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acropolis Institute of Technology and Research</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ------------------------------------------------------------------------------------ -->
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html">
+            <img src="/images/aitrlogo.png" alt="AITR">
+            </a>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------------------------------------------ -->
+    <section id="home">
+        <div id="arrows">
+            <div class="arrow-1">
+                <div class="arr-1">
+                    <div class="btn">
+                        <a href="#home">Home</a>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-2">
+                <div class="arr-2">
+                    <div class="btn">
+                        <a href="#courses">courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-3">
+                <div class="arr-3">
+                    <div class="btn">
+                        <a href="enquiry.html">Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-4">
+                <div class="arr-4">
+                    <div class="btn">
+
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="arrow-5">
+                    <div class="arr-5">
+                        <div class="btn">
+                            <a href="#contact-us">contact Us</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------ -->
+    <section id="courses-container">
+        <h1 class="h-primary center">Courses Offered</h1>
+        <div id="courses">
+            <div class="box">
+                <img src="/images/btech.png">
+                <h2 class="h-secondary center">B-Tech</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ab ullam provident excepturi cum quas adipisci explicabo vel! Laudantium sed doloribus est alias totam maiores excepturi nam consequuntur repudiandae facilis, in earum ullam voluptatum.
+                </p>
+            </div>
+            <div class="box">
+                <img src="/images/mtech.png">
+                <h2 class="h-secondary center">M-Tech</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ab ullam provident excepturi cum quas adipisci explicabo vel! Laudantium sed doloribus est alias totam maiores excepturi nam consequuntur repudiandae facilis, in earum ullam voluptatum.
+                </p>
+            </div>
+            <div class="box">
+                <img src="/images/mba.jpg">
+                <h2 class="h-secondary center">MBA</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ab ullam provident excepturi cum quas adipisci explicabo vel! Laudantium sed doloribus est alias totam maiores excepturi nam consequuntur repudiandae facilis, in earum ullam voluptatum.
+                </p>
+            </div>
+        </div>
+    </section>
+        <!-- ------------------------------------------------------------------------------------ -->
+    <section id="gallery">
+        <img class="slideshow" src="/images/img1.png" >
+        <img class="slideshow" src="/images/img2.png" >
+        <img class="slideshow" src="/images/img3.png" >
+        <img class="slideshow" src="/images/img4.jpg" >
+        <img class="slideshow" src="/images/img5.jpg" >
+        <img class="slideshow" src="/images/img6.jpg" >
+    </section>
+        <!-- ------------------------------------------------------------------------------------ -->
+    <section id="contact-us">
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="phone" name="name" id="phone" placeholder="enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+        <!-- ------------------------------------------------------------------------------------ -->
+    <footer>
+        <div class="center">
+            Copyright &copy; www.acropolis.com. All rights reserved
+        </div>
+    </footer>
+    <!-- ------------------------------------------------------------------------------------ -->
+    </body>
+<script>
+        var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slideshow");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2300);
+    }
+</script>
+</html>
