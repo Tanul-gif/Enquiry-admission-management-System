@@ -119,7 +119,7 @@ html{
 #home::before{
     content: "";
     position: absolute;
-    background: url('/images/img1.png') no-repeat center center;
+    background: url('images/img1.png') no-repeat center center;
     height: 100%;
     width: 100%;
     top: 0px;
@@ -173,7 +173,7 @@ html{
 }
 #contact-us::before{
     content: "";
-    background: url(/images/Contact_Us.jpg) no-repeat center center/cover;
+    background: url(images/Contact_Us.jpg) no-repeat center center/cover;
     position: absolute;
     background-size: cover;
     width: 100%;
