@@ -174,7 +174,7 @@ html{
 #contact-us::before{
     content: "";
 /*     background: url("images/Contact_Us.jpg") no-repeat center center/cover; */
-background: url(images/Contact_Us.jpg) no-repeat center center/cover;
+background: url("images/Contact_Us.jpg") no-repeat center center/cover;
     position: absolute;
     background-size: cover;
     width: 100%;
