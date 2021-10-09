@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="gallery.css">
+<!--     <link rel="stylesheet" href="gallery.css"> -->
     <link rel="stylesheet" href="lightbox.min.css">
     <script src="lightbox-plus-jquery.min.js"></script>
     <title>Gallery</title>
+    <style>.gallery{
+    /* background-color: black; */
+    background: url(gallery/background.jpg);
+    /* margin: 10px 50px; */
+    /* margin: 0px; */
+    /* margin-top: 0px; */
+}
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 20%;
+    margin-left: 28px;
+}
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.2);
+}</style>
 </head>
 <body>
 <div class="gallery">
