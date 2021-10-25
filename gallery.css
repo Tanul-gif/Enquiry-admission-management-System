@@ -1,0 +1,42 @@
+#navbar {
+    background: url(images/img1.png) no-repeat;
+    background-size: cover;
+    height: 6rem;
+    margin: -17px -8px 0px -11px;
+    width: 100%;
+    border-radius: 15px;
+    position: fixed;
+    
+}
+
+#logo {
+    margin: 17px 32px;
+    padding-top: 1.5rem;
+}
+
+#logo img {
+    height: 64px;
+    margin: -10px -29px;
+}
+
+body {
+    background: url(gallery/gallery_bg.jpg);
+}
+.gallery{
+    padding-top: 100px;
+}
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 20%;
+    margin-left: 28px;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.2);
+}
+
+.center {
+    text-align: center;
+}
