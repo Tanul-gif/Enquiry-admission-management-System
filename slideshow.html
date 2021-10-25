@@ -1,0 +1,71 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">HTML slides</h2>
+
+<div class="w3-content" style="max-width:400px">
+  <img class="mySlides" src="/images/img1.png" style="width:100%">
+  <img class="mySlides" src="/images/img.2png" style="width:100%">
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() 
+{
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) 
+  {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #slider{
+      overflow: hidden;
+    }
+    #slider figure{
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 3s slider infinite;
+    }
+  </style>
+</head>
+<body>
+    <div id="slider">
+      <figure>
+        <img src="/images/img1.png">
+        <img src="/images/img2.png">
+        <img src="/images/img3.png">
+      </figure>
+    </div>
+</body>
+</html>
