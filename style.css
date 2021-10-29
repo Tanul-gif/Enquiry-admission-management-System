@@ -17,11 +17,17 @@ html {
 }
 
 #navbar{
+    display: flex;
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     /* border-radius: 15px; */
     position: fixed;
     z-index: 4;
+}
+#navbar ul li{
+    display: inline-block;
+    margin-left: 73rem;
+    margin-top: 2rem;
 }
 #navbar ul li a:hover {
     color: black;
@@ -137,7 +143,7 @@ html {
 #home::before {
     content: "";
     position: absolute;
-    background: url('images/img1.png') no-repeat center center;
+    background: url('/images/img1.png') no-repeat center center;
     height: 100%;
     width: 100%;
     top: 0px;
@@ -163,12 +169,19 @@ html {
 #courses {
     margin: 34px 0px;
     margin: 50px 0px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 15px;
 }
 
 #courses-container {
     margin: 76px 0px;
     padding: 20rem 0px 0px 0px;
+}
+
+#courses .box ul li{
+    list-style: none;
+    padding-left: 15px;
 }
 
 #courses .box {
@@ -194,48 +207,6 @@ html {
     height: 50rem;
 }
 
-/* #contact-us {
-    position: relative;
-}
-
-#contact-us::before {
-    content: "";
-    background: url(/images/Contact_Us.jpg) no-repeat center center/cover;
-    position: absolute;
-    background-size: cover;
-    width: 100%;
-    height: 102%;
-    top: -10px;
-    left: 0px;
-    z-index: -2;
-    opacity: 0.6;
-}
-
-#contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-
-#contact-box input,
-#contact-box textarea {
-    width: 100%;
-    padding: 1.1rem;
-}
-
-#contact-box form {
-    width: 40%;
-}
-
-#contact-box label {
-    font-size: 1.3rem;
-    font-family: 'Source Code Pro', monospace;
-} */
-/* #maps p{
-    width: 80rem;
-    height: 40rem;
-} */
 .h-primary {
     font-size: 3.8rem;
     padding: 12px;
