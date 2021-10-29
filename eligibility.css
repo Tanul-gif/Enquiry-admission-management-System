@@ -1,0 +1,65 @@
+
+body{
+    background: url(images/login_bg1.jpg);
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #logo {
+    margin: 17px 32px;
+  }
+  
+  #logo img {
+    height: 86px;
+    margin: -11px -12px;
+  }
+  
+  #navbar{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+  }
+  
+  #eligibility{
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+  }
+  h3{
+      font-family: Calibri; 
+      font-size: 25pt;         
+      font-style: normal; 
+      font-weight: bold; 
+      color:SlateBlue;
+      text-align: center; 
+      text-decoration: underline
+    }
+    
+    table{
+      font-family: Calibri; 
+      color:white; 
+      font-size: 11pt; 
+      font-style: normal;
+      font-weight: bold;
+      /* text-align:;  */
+      background-color: SlateBlue; 
+      border-collapse: collapse; 
+      border: 2px solid navy
+    }
+    table.inner{
+      border: 0px
+    }
+    .center {
+      text-align: center;
+  }
+    footer {
+        background: black;
+        color: white;
+        padding: 2.5px;
+        margin-top: 50px;
+  }
